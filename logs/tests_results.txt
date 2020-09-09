@@ -1,16 +1,39 @@
-test_upper_case_names (__main__.TestExercice) ... ERROR
+test_upper_case_names (__main__.TestExercice) ... FAIL
 
 ======================================================================
-ERROR: test_upper_case_names (__main__.TestExercice)
+FAIL: test_upper_case_names (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 17, in test_upper_case_names
-    output = list(map(exercice.majuscule, altered_words))
-  File "/home/runner/work/c03_ch2_ecriture-benjamindeleener/c03_ch2_ecriture-benjamindeleener/exercice.py", line 7, in majuscule
-    lettre += 36
-TypeError: must be str, not int
+  File "test_exercice.py", line 21, in test_upper_case_names
+    'Toutes les lettres doivent être en majuscule.'
+AssertionError: Lists differ: ['.N/O2R$D', '!A,L#C/O/O,L', '.N%E2R6V%E5U8[122 chars]E4T'] != ['nord', 'alcool', 'nerveux', 'examen', 'sa[57 chars]bet']
+
+First differing element 0:
+'.N/O2R$D'
+'nord'
+
+- ['.N/O2R$D',
+-  '!A,L#C/O/O,L',
+-  '.N%E2R6V%E5U8X',
+-  '%E8X!A-M%E.N',
+-  '3S!A"B/O4T',
+-  '5U.N)I4T©É',
+-  '$D)I6V%E2R4T)I2R',
+-  '!A3S3S/O#C)I!A4T)I/O.N',
+-  '0P,L5U)I%E',
+-  '!A,L0P(H!A"B%E4T']
++ ['nord',
++  'alcool',
++  'nerveux',
++  'examen',
++  'sabot',
++  'unité',
++  'divertir',
++  'association',
++  'pluie',
++  'alphabet'] : Toutes les lettres doivent être en majuscule.
 
 ----------------------------------------------------------------------
 Ran 1 test in 0.001s
 
-FAILED (errors=1)
+FAILED (failures=1)
