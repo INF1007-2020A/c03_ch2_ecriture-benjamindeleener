@@ -7,7 +7,7 @@ Traceback (most recent call last):
   File "test_exercice.py", line 17, in test_upper_case_names
     output = list(map(exercice.majuscule, altered_words))
   File "/home/runner/work/c03_ch2_ecriture-benjamindeleener/c03_ch2_ecriture-benjamindeleener/exercice.py", line 7, in majuscule
-    lettre += 34
+    lettre += 36
 TypeError: must be str, not int
 
 ----------------------------------------------------------------------
