@@ -8,7 +8,6 @@ def majuscule(mot):
         nombre = ord(lettre)
         nombre -= 32
         resultat += chr(nombre)
-        resultat += lettre
     return resultat
 
 
